@@ -20,5 +20,10 @@
   <%= @person.is_alive %>
 </p>
 
+<p>
+  <strong>Is_alive:</strong>
+  <%= image_tag(@person.profile_pic.url(:thumb)) %>
+</p>
+
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>
